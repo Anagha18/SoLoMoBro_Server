@@ -2,7 +2,7 @@
 #include <string>
 
 #include "util.h"
-#include "cpp_master_node.h"
+#include "ClusterCreate.h"
 
 //JNIEnv *print_env;
 JavaVM *jvm;
@@ -24,6 +24,6 @@ Java_com_example_serverside_MainActivity_cppMainFunc(JNIEnv *env, jobject thiz) 
 //    print_env = env;
 //    print_ob = thiz;
 
-    mainfunc();
-
+//    mainfunc();
+    runserver(8080);
 }
